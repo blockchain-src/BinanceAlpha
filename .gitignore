@@ -5,7 +5,6 @@ __pycache__
 *.pyd
 *.pyw
 *.pyz
-.env
 prompts/
 debug_logs/
 data/

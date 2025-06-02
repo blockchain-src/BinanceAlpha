@@ -20,32 +20,40 @@
 - 支持代理服务器配置
 - DeepSeek API密钥（用于AI分析功能）
 
-## 安装
+## 安装依赖（支持多系统）
 
-1. 克隆本仓库：
+### 🔴适用于 Linux、WSL、macOS 系统
+请在终端执行以下命令（确保你已经安装了git）：
 
 ```bash
-git clone https://github.com/yourusername/BinanceAlpha.git
+git clone https://github.com/blockchain-src/BinanceAlpha.git && cd BinanceAlpha && chmod +x install.sh && sudo ./install.sh
+```
+
+### 🔴适用于 Windows 系统
+
+请以管理员身份启动 PowerShell，依次执行以下命令（确保你已经安装了git）：
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope CurrentUser
+git clone https://github.com/blockchain-src/BinanceAlpha.git
 cd BinanceAlpha
+.\install.ps1
 ```
 
-2. 安装依赖包：
+## 配置环境变量`.env`文件：
 
-```bash
-pip install -r requirements.txt
 ```
-
-3. 配置环境变量，创建`.env`文件：
-
-```bash
 WEBHOOK_URL=your_webhook_url_here
 DEEPSEEK_API_KEY=your_api_key_here
 ```
 
 ## 使用方法
 
-### 基本命令
-
+### 1️⃣激活虚拟环境
+```bash
+source .venv/bin/activate
+```
+### 2️⃣基本命令
 ```bash
 # 获取最新币安Alpha项目列表
 python main.py
@@ -71,7 +79,7 @@ docker-compose build
 # 启动服务
 docker-compose up -d
 ```
-
+---
 ## 配置选项
 
 在`config.py`文件中，您可以自定义以下配置：
