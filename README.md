@@ -22,14 +22,14 @@
 
 ## 安装依赖（支持多系统）
 
-### 🔴适用于 Linux、WSL、macOS 系统
+### 🔴Linux、WSL、macOS 系统
 请在终端执行以下命令（确保你已经安装了git）：
 
 ```bash
 git clone https://github.com/blockchain-src/BinanceAlpha.git && cd BinanceAlpha && chmod +x install.sh && sudo ./install.sh
 ```
 
-### 🔴适用于 Windows 系统
+### 🔴Windows 系统
 
 请以管理员身份启动 PowerShell，依次执行以下命令（确保你已经安装了git）：
 
