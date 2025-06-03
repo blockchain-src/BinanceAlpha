@@ -1,8 +1,8 @@
-# 币安Alpha市场监控与AI智能分析系统
+# 🤖 币安Alpha市场监控与AI智能分析系统
 
 一个强大的加密货币监控工具，专注于币安Alpha市场分析，提供实时数据收集、上币信息跟踪、市场情绪分析和AI辅助投资建议。
 
-## 功能特点
+## 📌 功能特点
 
 - ✅ 实时获取并分析币安Alpha市场项目列表
 - ✅ 自动检测并跟踪币安现货和创新区上新代币
@@ -13,14 +13,14 @@
 - ✅ 完善的代理配置支持，确保全球范围内稳定访问
 - ✅ 支持Docker化部署，便于快速搭建和维护
 
-## 系统要求
+## ⚙️ 系统要求
 
 - Python 3.7+
 - 互联网连接（用于获取最新市场数据）
 - 支持代理服务器配置
 - DeepSeek API密钥（用于AI分析功能）
 
-## 安装依赖（支持多系统）
+## 🛡️ 安装依赖（支持多系统）
 
 ### 🔴Linux、WSL、macOS 系统
 请在终端执行以下命令（确保你已经安装了git）：
@@ -40,14 +40,14 @@ cd BinanceAlpha
 .\install.ps1
 ```
 
-## 配置环境变量`.env`文件：
+## 📝 配置环境变量`.env`文件：
 
 ```
 WEBHOOK_URL=your_webhook_url_here
 DEEPSEEK_API_KEY=your_api_key_here
 ```
 
-## 使用方法
+## 🖐️ 使用方法
 
 ### 🔴Linux、WSL、macOS 系统
 
@@ -69,7 +69,26 @@ python main.py --platform Ethereum
 # 显示帮助信息
 python main.py --help
 ```
+### 🔴Windows 系统
 
+#### 1️⃣激活虚拟环境
+```bash
+.venv\Scripts\Activate.ps1
+```
+#### 2️⃣基本命令
+```bash
+# 获取最新币安Alpha项目列表
+python main.py
+
+# 强制更新数据并重新分析
+python main.py --force
+
+# 获取特定区块链平台的项目
+python main.py --platform Ethereum
+
+# 显示帮助信息
+python main.py --help
+```
 ### Docker部署
 
 本项目支持Docker部署，使用以下命令快速启动：
@@ -82,7 +101,7 @@ docker-compose build
 docker-compose up -d
 ```
 ---
-## 配置选项
+## 🌐 配置选项
 
 在`config.py`文件中，您可以自定义以下配置：
 
@@ -92,7 +111,7 @@ docker-compose up -d
 - **WebHook**：配置`WEBHOOK_URL`实现数据推送
 - **数据目录**：通过`DATA_DIRS`自定义各类数据存储位置
 
-## 数据分析能力
+## 📊 数据分析能力
 
 ### 币安Alpha项目分析
 
@@ -111,13 +130,13 @@ docker-compose up -d
 - 多维度投资风险评估
 - 短期、中期和长期投资建议
 
-## 数据来源
+## 🗼 数据来源
 
 - 币安Alpha项目数据：CoinMarketCap API
 - 币安现货与创新区数据：Binance API
 - 区块链平台分类信息：项目标签与描述分析
 
-## 注意事项
+## ⚠️ 注意事项
 
 - 本系统仅提供市场数据分析参考，不构成投资建议
 - 加密货币市场风险较大，请谨慎投资
