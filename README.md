@@ -13,6 +13,12 @@
 - ✅ 完善的代理配置支持，确保全球范围内稳定访问
 - ✅ 支持Docker化部署，便于快速搭建和维护
 
+## 🖥️ 支持平台
+
+- ![Windows](https://img.shields.io/badge/-Windows-0078D6?logo=windows&logoColor=white)
+- ![macOS](https://img.shields.io/badge/-macOS-000000?logo=apple&logoColor=white)
+- ![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black)
+
 ## ⚙️ 系统要求
 
 - Python 3.7+
