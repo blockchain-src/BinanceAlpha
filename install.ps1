@@ -45,8 +45,12 @@ foreach ($pkg in $requirements) {
 
 # Install packages from requirements.txt if the file exists
 if (Test-Path 'requirements.txt') {
-    Write-Output 'Installing packages from requirements.txt ...'
-    python -m pip install -r requirements.txt --user
+    Write-Output '创建并激活虚拟环境...'
+    python -m venv .venv
+    .'.venv\Scripts\Activate.ps1'
+
+    Write-Output '安装 requirements.txt 中的库...'
+    python -m pip install -r requirements.txt
 }
 
 # Environment variable settings

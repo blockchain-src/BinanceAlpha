@@ -49,11 +49,13 @@ DEEPSEEK_API_KEY=your_api_key_here
 
 ## 使用方法
 
-### 1️⃣激活虚拟环境
+### 🔴Linux、WSL、macOS 系统
+
+#### 1️⃣激活虚拟环境
 ```bash
 source .venv/bin/activate
 ```
-### 2️⃣基本命令
+#### 2️⃣基本命令
 ```bash
 # 获取最新币安Alpha项目列表
 python main.py
